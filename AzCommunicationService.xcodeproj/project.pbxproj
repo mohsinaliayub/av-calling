@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D2EE8DCE380DE34FA199D17 /* Pods_AzCommunicationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4FFB835D475CDA84E3FAF /* Pods_AzCommunicationService.framework */; };
 		68550E192C5FA7AF007EC661 /* AzCommunicationServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68550E182C5FA7AF007EC661 /* AzCommunicationServiceApp.swift */; };
 		68550E1B2C5FA7AF007EC661 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68550E1A2C5FA7AF007EC661 /* ContentView.swift */; };
 		68550E1D2C5FA7B1007EC661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68550E1C2C5FA7B1007EC661 /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18E4FFB835D475CDA84E3FAF /* Pods_AzCommunicationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzCommunicationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68550E152C5FA7AF007EC661 /* AzCommunicationService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzCommunicationService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68550E182C5FA7AF007EC661 /* AzCommunicationServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzCommunicationServiceApp.swift; sourceTree = "<group>"; };
 		68550E1A2C5FA7AF007EC661 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68550E1C2C5FA7B1007EC661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68550E1F2C5FA7B1007EC661 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90EEB1D5107C8784C044DACE /* Pods-AzCommunicationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzCommunicationService.release.xcconfig"; path = "Target Support Files/Pods-AzCommunicationService/Pods-AzCommunicationService.release.xcconfig"; sourceTree = "<group>"; };
+		91E25EDF58A3914EB6DF3F14 /* Pods-AzCommunicationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzCommunicationService.debug.xcconfig"; path = "Target Support Files/Pods-AzCommunicationService/Pods-AzCommunicationService.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2EE8DCE380DE34FA199D17 /* Pods_AzCommunicationService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4720E3D22F0789CABEFD43E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E4FFB835D475CDA84E3FAF /* Pods_AzCommunicationService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68550E0C2C5FA7AF007EC661 = {
 			isa = PBXGroup;
 			children = (
 				68550E172C5FA7AF007EC661 /* AzCommunicationService */,
 				68550E162C5FA7AF007EC661 /* Products */,
+				92C58D07FC5E0E6302094CC8 /* Pods */,
+				4720E3D22F0789CABEFD43E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		92C58D07FC5E0E6302094CC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91E25EDF58A3914EB6DF3F14 /* Pods-AzCommunicationService.debug.xcconfig */,
+				90EEB1D5107C8784C044DACE /* Pods-AzCommunicationService.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68550E232C5FA7B1007EC661 /* Build configuration list for PBXNativeTarget "AzCommunicationService" */;
 			buildPhases = (
+				AAB4897510040A1228F2EB08 /* [CP] Check Pods Manifest.lock */,
 				68550E112C5FA7AF007EC661 /* Sources */,
 				68550E122C5FA7AF007EC661 /* Frameworks */,
 				68550E132C5FA7AF007EC661 /* Resources */,
+				77A3ADD806DCF925CCF40636 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77A3ADD806DCF925CCF40636 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AzCommunicationService/Pods-AzCommunicationService-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AzCommunicationService/Pods-AzCommunicationService-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AzCommunicationService/Pods-AzCommunicationService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB4897510040A1228F2EB08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AzCommunicationService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68550E112C5FA7AF007EC661 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,7 +250,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,7 +313,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -266,6 +334,7 @@
 		};
 		68550E242C5FA7B1007EC661 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91E25EDF58A3914EB6DF3F14 /* Pods-AzCommunicationService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +364,7 @@
 		};
 		68550E252C5FA7B1007EC661 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90EEB1D5107C8784C044DACE /* Pods-AzCommunicationService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

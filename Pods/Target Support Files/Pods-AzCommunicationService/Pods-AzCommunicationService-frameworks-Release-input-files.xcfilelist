@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-AzCommunicationService/Pods-AzCommunicationService-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AzureCommunicationCommon/AzureCommunicationCommon.framework
+${BUILT_PRODUCTS_DIR}/AzureCore/AzureCore.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AzureCommunicationCalling/AzureCommunicationCalling.framework/AzureCommunicationCalling
